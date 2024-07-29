@@ -60,7 +60,7 @@
     
       <div class="container">
         <h2>Gym Membership Registration</h2>
-        <form action="{% url 'members' %} " method="Post">
+        <form action="{% url 'members' %} " method="POST">
             {% csrf_token %}
             <label for="fname">Full name:</label>
             <input type="text" value="{{todo.name}}" id="fname" name="fname" required>
@@ -94,7 +94,7 @@
             </select>
     
             <label for="membership">Membership Type:</label>
-            <select id="membership" name="membership" required>
+            <select id="membership"  name="membership" required>
                 <option value="">Select Membership</option>
                 {% if todo.membership == "monthly" %} 
                 <option value="monthly" selected >Monthly</option>

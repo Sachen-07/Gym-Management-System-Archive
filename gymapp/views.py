@@ -12,7 +12,7 @@ def create(request):
         membership=request.POST.get("membership")
         print(name, email, age, phone, gender, membership)
         Todo.objects.create(name=name, email=email, age=age, phone=phone, gender=gender, membership=membership)
-        return redirect('/create')
+        return redirect('/members')
     return render(request,'index.html')
 
 def edit(request, pk):
