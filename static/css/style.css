@@ -50,36 +50,12 @@ body {
   bottom: 0;
   width: 100%;
 }
-main {
+.main {
     padding: 2rem;
 }
-
-section {
-    margin-bottom: 2rem;
+.p{
+    color: #ffe7e7;
 }
-h1 {
-    color: #fff;
-
-}
- h2 {
-    color: #030101;
-}
-
-p, ul {
-    color: #555;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    padding: 0.5rem 0;
-}
-
-
-
 .table-container {
     display: flex;
     justify-content: center;
