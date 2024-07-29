@@ -21,6 +21,7 @@ def edit(request, pk):
     if request.method == 'POST':
         todo_obj.name=request.POST.get('name')
         todo_obj.email=request.POST.get('email')
+        print('hello')
         todo_obj.age=request.POST.get('age')
         todo_obj.phone=request.POST.get('phone')
         todo_obj.gender=request.POST.get('gender')

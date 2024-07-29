@@ -54,16 +54,17 @@
           input[type="submit"]:hover {
               background-color: #45a049;
           }
+          
       </style>
 </head>
 <body>
     
       <div class="container">
         <h2>Gym Membership Registration</h2>
-        <form action="{% url 'members' %} " method="POST">
+        <form action="{% url 'edit' todo.id %} " method="POST">
             {% csrf_token %}
             <label for="fname">Full name:</label>
-            <input type="text" value="{{todo.name}}" id="fname" name="fname" required>
+            <input type="text" value="{{todo.name}}" id="fname" name="name" required>
     
            
     

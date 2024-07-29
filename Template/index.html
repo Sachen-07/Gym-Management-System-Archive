@@ -61,6 +61,7 @@
       <div class="container">
         <h2>Gym Membership Registration</h2>
         <form action=" {% url "create" %} " method="POST">
+            
           {% csrf_token %}
             <label for="name">Full name:</label>
             <input type="text" id="name" name="name" required>
