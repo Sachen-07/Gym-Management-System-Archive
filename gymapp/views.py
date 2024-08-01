@@ -21,7 +21,7 @@ def create(request):
             membership=membership,
         )
         return redirect("/members")
-    return render(request, "index.html")
+    return render(request, "registation.html")
 
 
 def edit(request, pk):

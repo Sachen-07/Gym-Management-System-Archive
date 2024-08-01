@@ -41,7 +41,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049;
 }
-input[type="home"] {
+input[type="button"] {
     background-color: #4CAF50;
     color: white;
     padding: 10px 15px;
